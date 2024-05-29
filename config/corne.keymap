@@ -13,26 +13,20 @@
     combos {
         compatible = "zmk,combos";
 
-        Layer3ii {
-            bindings = <&lt 4 ESCAPE>;
-            key-positions = <41 40>;
-            layers = <0>;
-        };
-
         combo_control {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <41 35>;
             timeout-ms = <50>;
         };
 
         combo_space {
-            bindings = <&kp LG(SPACE)>;
+            bindings = <&kp ESC>;
             key-positions = <38 39>;
             timeout-ms = <40>;
         };
 
         combo_left_esc {
-            bindings = <&kp ESC>;
+            bindings = <&mo 5>;
             key-positions = <24 36>;
             timeout-ms = <50>;
         };
@@ -79,7 +73,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &kp F15   &kp F16   &kp F17       &kp F18    &kp F19      &kp F20  &kp N7  &kp N8    &kp N9  &kp N0    &kp BSPC
+&trans     &trans    &trans    &trans        &trans     &trans       &trans   &kp N7  &kp N8    &kp N9  &kp N0    &kp BSPC
 &trans     &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans       &trans   &kp N4  &kp N5    &kp N6  &kp HOME  &trans
 &kp LSHFT  &trans    &trans    &trans        &trans     &trans       &trans   &kp N1  &kp N2    &kp N3  &kp END   &trans
                                &kp LGUI      &trans     &kp SPACE    &kp RET  &kp N0  &kp LCMD
@@ -110,12 +104,12 @@
             >;
         };
 
-        control {
+        Nav_functions {
             bindings = <
-&none     &none  &none  &none     &none      &none        &none    &none  &none  &none  &none  &none
-&kp CAPS  &none  &none  &none     &none      &none        &none    &none  &none  &none  &none  &none
-&none     &none  &none  &none     &none      &none        &none    &none  &none  &none  &none  &none
-                        &kp LGUI  &kp LCTRL  &kp SPACE    &kp RET  &none  &none
+&none         &none    &kp F22  &kp F23  &none    &none      &none    &none    &none    &none    &none    &none
+&kp LEFT_ALT  &kp F13  &kp F14  &kp F15  &kp F16  &none      &none    &kp F17  &kp F18  &kp F19  &kp F20  &kp LALT
+&none         &none    &none    &none    &none    &none      &none    &none    &none    &none    &none    &none
+                                &trans   &trans   &kp F21    &kp F21  &none    &none
             >;
         };
 
