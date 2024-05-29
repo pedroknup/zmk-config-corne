@@ -16,7 +16,7 @@
         combo_control {
             bindings = <&mo 5>;
             key-positions = <41 35>;
-            timeout-ms = <50>;
+            timeout-ms = <70>;
         };
 
         combo_space {
@@ -28,13 +28,24 @@
         combo_left_esc {
             bindings = <&mo 5>;
             key-positions = <24 36>;
-            timeout-ms = <50>;
+            timeout-ms = <70>;
         };
 
         combo_vim {
             bindings = <&kp F3>;
             key-positions = <37 40>;
             timeout-ms = <50>;
+        };
+
+        quick_tap_esc {
+            bindings = <&kp ESC>;
+            key-positions = <35 41>;
+            timeout-ms = <20>;
+        };
+
+        quick_tap_esc_2 {
+            bindings = <&kp ESC>;
+            key-positions = <24 36>;
         };
     };
 
