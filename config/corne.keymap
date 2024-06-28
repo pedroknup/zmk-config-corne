@@ -52,6 +52,61 @@
             bindings = <&to 4>;
             key-positions = <36 41>;
         };
+
+        chevron {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <19 8>;
+        };
+
+        chevron_right {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <8 21>;
+        };
+
+        parenthesis_l {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <19 20>;
+        };
+
+        parenthesis_right {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <20 21>;
+        };
+
+        brackets_left {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <31 32>;
+        };
+
+        bracket_right {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <32 33>;
+        };
+
+        braces_left {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <7 8>;
+        };
+
+        braces_right {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <8 9>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <18 7>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <6 19>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <6 18>;
+        };
     };
 
     macros {
