@@ -107,6 +107,16 @@
             bindings = <&kp PIPE>;
             key-positions = <6 18>;
         };
+
+        period {
+            bindings = <&kp PERIOD>;
+            key-positions = <15 20>;
+        };
+
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <16 19>;
+        };
     };
 
     macros {
@@ -165,6 +175,20 @@
             bindings = <&kp LG(V)>;
             label = "PASTE";
         };
+
+        ctrl_right: ctrl_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RIGHT)>;
+            label = "CTRL_RIGHT";
+        };
+
+        ctrl_left: ctrl_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LEFT)>;
+            label = "CTRL_LEFT";
+        };
     };
 
     keymap {
@@ -178,9 +202,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LCMD TAB      &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y                 &kp U            &kp I      &kp O    &kp P     &kp BACKSPACE
-&mt LCTRL ESCAPE  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H                 &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N                 &kp M            &kp COMMA  &kp DOT  &kp FSLH  &mt LEFT_SHIFT ESCAPE
+&mt LCMD TAB      &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y                 &kp U            &kp I     &kp O       &kp P        &kp BACKSPACE
+&mt LCTRL ESCAPE  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H                 &kp J            &kp K     &kp L       &kp SEMI     &kp SQT
+&kp LEFT_SHIFT    &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N                 &kp M            &kp F18   &ctrl_left  &ctrl_right  &mt LEFT_SHIFT ESCAPE
                                 &kp LCMD  &mo 2  &kp SPACE    &mt LEFT_SHIFT ENTER  &lt 3 BACKSPACE  &kp LALT
             >;
         };
@@ -203,8 +227,8 @@
 
             bindings = <
 &trans     &trans    &kp QUESTION  &alt_left     &alt_right  &trans       &trans   &kp N7  &kp N8    &kp N9  &trans    &kp BSPC
-&trans     &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT   &trans       &trans   &kp N4  &kp N5    &kp N6  &kp HOME  &trans
-&kp LSHFT  &trans    &trans        &trans        &copy       &paste       &trans   &kp N1  &kp N2    &kp N3  &kp END   &trans
+&trans     &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT   &paste       &trans   &kp N4  &kp N5    &kp N6  &kp HOME  &trans
+&kp LSHFT  &trans    &trans        &trans        &copy       &copy        &trans   &kp N1  &kp N2    &kp N3  &kp END   &trans
                                    &kp LGUI      &trans      &kp SPACE    &kp RET  &kp N0  &kp LCMD
             >;
         };
@@ -243,6 +267,15 @@
         };
 
         layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
