@@ -21,7 +21,7 @@
 
         combo_space {
             bindings = <&kp ESC>;
-            key-positions = <38 39>;
+            key-positions = <35 24>;
             timeout-ms = <40>;
         };
 
@@ -164,7 +164,7 @@
         };
 
         shift_thumb {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&mt LEFT_SHIFT ESCAPE>;
             key-positions = <38 39>;
         };
 
