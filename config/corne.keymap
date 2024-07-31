@@ -185,12 +185,12 @@
 
         jk_period {
             bindings = <&kp PERIOD>;
-            key-positions = <19 20>;
+            key-positions = <30 31>;
         };
 
         kl_colon {
             bindings = <&kp COLON>;
-            key-positions = <20 21>;
+            key-positions = <18 19>;
         };
     };
 
