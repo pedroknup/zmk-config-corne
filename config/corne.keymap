@@ -133,11 +133,6 @@
             key-positions = <5 4 6 7>;
         };
 
-        equal {
-            bindings = <&kp KP_EQUAL>;
-            key-positions = <19 20 21>;
-        };
-
         plus {
             bindings = <&kp PLUS>;
             key-positions = <14 15 16>;
@@ -191,6 +186,11 @@
         kl_colon {
             bindings = <&kp COLON>;
             key-positions = <18 19>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <19 20 21>;
         };
     };
 
