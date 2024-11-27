@@ -279,6 +279,132 @@
             bindings = <&kp LC(LEFT)>;
             label = "CTRL_LEFT";
         };
+
+        focus_1_screen: focus_1_screen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(M)))>;
+            label = "FOCUS_1_SCREEN";
+        };
+
+        focus_2_screen: focus_2_screen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(P)))>;
+            label = "FOCUS_2_SCREEN";
+        };
+
+        focus_3_screen: focus_3_screen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(SEMICOLON)))>;
+            label = "FOCUS_3_SCREEN";
+        };
+
+        throw_1_screen: throw_1_screen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(M))))>;
+            label = "THROW_1_SCREEN";
+        };
+
+        throw_2_screen: throw_2_screen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(COMMA))))>;
+            label = "THROW_2_SCREEN";
+        };
+
+        throw_3_screen: throw_3_screen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(PERIOD))))>;
+            label = "THROW_3_SCREEN";
+        };
+
+        throw_1_space: throw_1_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(J))))>;
+            label = "THROW_1_SPACE";
+        };
+
+        throw_2_space: throw_2_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(K))))>;
+            label = "THROW_2_SPACE";
+        };
+
+        throw_3_space: throw_3_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(L))))>;
+            label = "THROW_3_SPACE";
+        };
+
+        throw_4_space: throw_4_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(U))))>;
+            label = "THROW_4_SPACE";
+        };
+
+        throw_5_space: throw_5_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(I))))>;
+            label = "THROW_5_SPACE";
+        };
+
+        throw_6_space: throw_6_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(LA(LG(O))))>;
+            label = "THROW_6_SPACE";
+        };
+
+        focus_space_1: focus_space_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(J)))>;
+            label = "FOCUS_SPACE_1";
+        };
+
+        focus_space_2: focus_space_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(LA(K)))>;
+            label = "FOCUS_SPACE_2";
+        };
+
+        focus_space_3: focus_space_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(L)))>;
+            label = "FOCUS_SPACE_3";
+        };
+
+        focus_space_4: focus_space_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(U)))>;
+            label = "FOCUS_SPACE_4";
+        };
+
+        focus_space_5: focus_space_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(I)))>;
+            label = "FOCUS_SPACE_5";
+        };
+
+        focus_space_6: focus_space_6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(O)))>;
+            label = "FOCUS_SPACE_6";
+        };
     };
 
     keymap {
@@ -292,10 +418,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&lt 6 TAB         &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y                 &kp U            &kp I      &kp O       &kp P      &lt 6 LC(W)
-&mt LCTRL ESCAPE  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H                 &kp J            &kp K      &kp L       &kp SEMI   &kp SQT
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N                 &kp M            &kp COMMA  &kp PERIOD  &kp SLASH  &mt LEFT_SHIFT ESCAPE
-                                &kp LCMD  &mo 2  &kp SPACE    &mt LEFT_SHIFT ENTER  &lt 3 BACKSPACE  &kp LALT
+&lt 6 TAB         &kp Q  &kp W  &kp E     &kp R  &kp T          &kp Y                 &kp U            &kp I      &kp O       &kp P      &lt 6 LC(W)
+&mt LCTRL ESCAPE  &kp A  &kp S  &kp D     &kp F  &kp G          &kp H                 &kp J            &kp K      &kp L       &kp SEMI   &kp SQT
+&kp LEFT_SHIFT    &kp Z  &kp X  &kp C     &kp V  &kp B          &kp N                 &kp M            &kp COMMA  &kp PERIOD  &kp SLASH  &mt LEFT_SHIFT ESCAPE
+                                &kp LCMD  &mo 2  &lt 7 SPACE    &mt LEFT_SHIFT ENTER  &lt 3 BACKSPACE  &kp LALT
             >;
         };
 
@@ -365,12 +491,12 @@
             >;
         };
 
-        layer_7 {
+        window-mgt {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans            &trans  &trans  &trans  &trans  &trans    &trans  &focus_space_4   &focus_space_5   &focus_space_6   &trans  &trans
+&kp LEFT_COMMAND  &trans  &trans  &trans  &trans  &trans    &trans  &focus_space_1   &focus_space_2   &focus_space_3   &trans  &trans
+&trans            &trans  &trans  &trans  &trans  &trans    &trans  &focus_1_screen  &focus_2_screen  &throw_3_screen  &trans  &trans
+                                  &trans  &trans  &trans    &trans  &trans           &trans
             >;
         };
     };
