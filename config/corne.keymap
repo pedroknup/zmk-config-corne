@@ -283,21 +283,21 @@
         focus_1_screen: focus_1_screen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(M)))>;
+            bindings = <&kp LS(LA(LC(W)))>;
             label = "FOCUS_1_SCREEN";
         };
 
         focus_2_screen: focus_2_screen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(P)))>;
+            bindings = <&kp LS(LA(LC(E)))>;
             label = "FOCUS_2_SCREEN";
         };
 
         focus_3_screen: focus_3_screen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(SEMICOLON)))>;
+            bindings = <&kp LS(LA(LC(R)))>;
             label = "FOCUS_3_SCREEN";
         };
 
