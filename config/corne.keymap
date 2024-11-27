@@ -304,21 +304,21 @@
         throw_1_screen: throw_1_screen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(M))))>;
+            bindings = <&kp LS(LA(LC(M)))>;
             label = "THROW_1_SCREEN";
         };
 
         throw_2_screen: throw_2_screen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(COMMA))))>;
+            bindings = <&kp LS(LA(LC(E)))>;
             label = "THROW_2_SCREEN";
         };
 
         throw_3_screen: throw_3_screen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(PERIOD))))>;
+            bindings = <&kp LS(LA(LC(R)))>;
             label = "THROW_3_SCREEN";
         };
 
