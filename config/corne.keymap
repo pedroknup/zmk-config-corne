@@ -172,6 +172,20 @@
             bindings = <&kp UNDER>;
             key-positions = <13 14 15 16>;
         };
+
+        enable-lol {
+            bindings = <&to 7>;
+            key-positions = <1 2 3 4>;
+            layers = <6>;
+            require-prior-idle-ms = <1000>;
+        };
+
+        cancel-lol {
+            bindings = <&to 6>;
+            key-positions = <7 8 9 10>;
+            layers = <7>;
+            require-prior-idle-ms = <1000>;
+        };
     };
 
     macros {
@@ -334,7 +348,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E   &kp R         &kp T        &kp Y    &kp U   &kp I      &kp O   &kp P     &trans
 &kp TILDE  &kp A  &kp S  &kp D   &kp F         &kp G        &kp H    &kp J   &kp K      &kp L   &kp SEMI  &trans
-&trans     &kp Z  &kp X  &kp C   &kp V         &kp B        &kp N    &kp M   &kp COMMA  &trans  &trans    &trans
+&mo 9      &kp Z  &kp X  &kp C   &kp V         &kp B        &kp N    &kp M   &kp COMMA  &trans  &trans    &trans
                          &trans  &lt 8 ESCAPE  &kp SPACE    &kp RET  &trans  &trans
             >;
         };
@@ -350,10 +364,10 @@
 
         lol-3rd-layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1      &kp F2      &kp F3      &kp F4      &kp F5        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans      &trans      &trans        &trans  &trans  &trans
             >;
         };
     };
