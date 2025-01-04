@@ -56,11 +56,13 @@
         chevron {
             bindings = <&kp LESS_THAN>;
             key-positions = <19 8>;
+            require-prior-idle-ms = <100>;
         };
 
         chevron_right {
             bindings = <&kp GREATER_THAN>;
             key-positions = <8 21>;
+            require-prior-idle-ms = <100>;
         };
 
         parenthesis_l {
@@ -206,6 +208,13 @@
         lock_pc {
             bindings = <&kp LG(LC(Q))>;
             key-positions = <0 11 39 38>;
+        };
+
+        to-lol {
+            bindings = <&to 9>;
+            key-positions = <1 2 3 4>;
+            require-prior-idle-ms = <1000>;
+            layers = <8>;
         };
     };
 
