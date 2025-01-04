@@ -514,10 +514,10 @@
 
         media {
             bindings = <
-&trans  &attach_mac_personal  &attach_mac_work  &attach_windows   &bt BT_SEL 3  &kp LA(LS(COMMA))     &kp C_VOLUME_UP    &trans             &trans            &trans  &trans  &trans
-&trans  &ctrl_left            &kp LC(DOWN)      &kp LC(UP_ARROW)  &ctrl_right   &kp LA(LS(PERIOD))    &kp C_PP           &kp C_NEXT         &trans            &trans  &trans  &trans
-&trans  &trans                &trans            &trans            &trans        &trans                &kp C_VOLUME_DOWN  &kp LG(NUMBER_1)   &kp LG(NUMBER_2)  &trans  &trans  &trans
-                                                &trans            &trans        &kp LS(LA(J))         &kp F18            &kp RA(BACKSPACE)  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &kp LA(LS(COMMA))     &kp C_VOLUME_UP    &trans             &trans            &trans  &trans  &trans
+&trans  &ctrl_left    &kp LC(DOWN)  &kp LC(UP_ARROW)  &ctrl_right   &kp LA(LS(PERIOD))    &kp C_PP           &kp C_NEXT         &trans            &trans  &trans  &trans
+&trans  &trans        &trans        &trans            &trans        &trans                &kp C_VOLUME_DOWN  &kp LG(NUMBER_1)   &kp LG(NUMBER_2)  &trans  &trans  &trans
+                                    &trans            &trans        &kp LS(LA(J))         &kp F18            &kp RA(BACKSPACE)  &trans
             >;
         };
 
