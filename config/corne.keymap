@@ -211,7 +211,7 @@
         };
 
         to-lol {
-            bindings = <&to 9>;
+            bindings = <&to 11>;
             key-positions = <1 2 3 4>;
             require-prior-idle-ms = <1000>;
             layers = <8>;
@@ -532,10 +532,28 @@
 
         windows {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y                 &kp U            &kp I         &kp O    &kp P     &kp ESC
-&mt LEFT_ALT ESC  &kp A  &kp S  &kp D             &kp F  &kp G        &kp H                 &kp J            &kp K         &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LSHFT         &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N                 &kp M            &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
-                                &kp LEFT_CONTROL  &mo 2  &kp SPACE    &mt LEFT_SHIFT ENTER  &lt 3 BACKSPACE  &kp LEFT_WIN
+&kp TAB           &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y                 &kp U             &kp I         &kp O    &kp P     &kp ESC
+&mt LEFT_ALT ESC  &kp A  &kp S  &kp D             &kp F  &kp G        &kp H                 &kp J             &kp K         &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LSHFT         &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N                 &kp M             &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
+                                &kp LEFT_CONTROL  &mo 9  &kp SPACE    &mt LEFT_SHIFT ENTER  &lt 10 BACKSPACE  &kp LEFT_WIN
+            >;
+        };
+
+        windows-numbers {
+            bindings = <
+&trans     &trans    &kp QUESTION  &alt_left     &alt_right  &screenshot    &trans   &kp N7  &kp N8    &kp N9  &trans    &kp BSPC
+&trans     &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT   &paste         &trans   &kp N4  &kp N5    &kp N6  &kp HOME  &trans
+&kp LSHFT  &trans    &trans        &trans        &copy       &copy          &trans   &kp N1  &kp N2    &kp N3  &kp END   &trans
+                                   &kp LGUI      &trans      &kp SPACE      &kp RET  &kp N0  &kp LCMD
+            >;
+        };
+
+        windows-symbols {
+            bindings = <
+&kp GRAVE  &kp EXCL   &kp AT         &kp HASH          &kp DLLR   &kp PRCNT        &kp CARET             &kp AMPS               &kp KP_MULTIPLY  &copy        &paste    &kp BSPC
+&kp SQT    &kp TILDE  &kp MINUS      &kp PLUS          &kp UNDER  &kp EQUAL        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT         &kp RBKT     &kp BSLH  &kp GRAVE
+&kp LSHFT  &kp SLASH  &kp LESS_THAN  &kp GREATER_THAN  &kp COLON  &kp SEMICOLON    &kp LEFT_BRACE        &kp RIGHT_BRACE        &spotlight       &screenshot  &kp PIPE  &trans
+                                     &kp LGUI          &trans     &kp SPACE        &trans                &trans                 &trans
             >;
         };
 
@@ -563,15 +581,6 @@
 &trans  &kp F1      &kp F2      &kp F3      &kp F4      &kp F5        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LC(Q)   &kp LC(W)   &kp LC(E)   &kp LC(R)   &kp LC(N5)    &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans      &trans      &trans        &trans  &trans  &trans
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
