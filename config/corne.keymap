@@ -534,17 +534,17 @@
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y                 &kp U             &kp I         &kp O    &kp P     &kp ESC
 &mt LEFT_ALT ESC  &kp A  &kp S  &kp D             &kp F  &kp G        &kp H                 &kp J             &kp K         &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LSHFT         &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N                 &kp M             &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
+&kp LSHFT         &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N                 &kp M             &kp COMMA     &kp DOT  &kp FSLH  &kp DEL
                                 &kp LEFT_CONTROL  &mo 9  &kp SPACE    &mt LEFT_SHIFT ENTER  &lt 10 BACKSPACE  &kp LEFT_WIN
             >;
         };
 
         windows-numbers {
             bindings = <
-&trans     &trans    &kp QUESTION  &alt_left     &alt_right  &screenshot    &trans   &kp N7  &kp N8    &kp N9  &trans    &kp BSPC
-&trans     &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT   &paste         &trans   &kp N4  &kp N5    &kp N6  &kp HOME  &trans
-&kp LSHFT  &trans    &trans        &trans        &copy       &copy          &trans   &kp N1  &kp N2    &kp N3  &kp END   &trans
-                                   &kp LGUI      &trans      &kp SPACE      &kp RET  &kp N0  &kp LCMD
+&trans     &trans    &kp QUESTION  &kp LC(LEFT)  &kp LC(RIGHT)  &kp PRINTSCREEN    &trans   &kp N7  &kp N8    &kp N9  &trans    &kp BSPC
+&trans     &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT      &kp LC(V)          &trans   &kp N4  &kp N5    &kp N6  &kp HOME  &trans
+&kp LSHFT  &trans    &trans        &trans        &copy          &kp LC(C)          &trans   &kp N1  &kp N2    &kp N3  &kp END   &trans
+                                   &kp LGUI      &trans         &kp SPACE          &kp RET  &kp N0  &kp LCMD
             >;
         };
 
