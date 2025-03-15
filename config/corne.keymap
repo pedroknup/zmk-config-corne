@@ -8,7 +8,37 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80    // default: 10
 #include <dt-bindings/zmk/pointing.h>
+
+#define MOUSE 14
+#define MOUSEFAST 15
+#define MOUSESLOW 16
+#define MOUSEXSLOW 17
+
+&mmv_input_listener {
+    set_mouse_fast {
+        layers = <MOUSEFAST>;
+        input-processors = <&zip_xy_scaler 2 1>;
+    };
+};
+
+&mmv_input_listener {
+    set_mouse_slow {
+        layers = <MOUSESLOW>;
+        input-processors = <&zip_xy_scaler 1 2>;
+    };
+};
+
+&mmv_input_listener {
+    set_mouse_extra_slow {
+        layers = <mouse>;
+        input-processors = <&zip_xy_scaler 1 4>;
+    };
+};
+
 
 / {
     combos {
@@ -585,7 +615,34 @@
             >;
         };
 
-        layer_14 {
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans          &trans           &trans  &trans
+                        &trans  &trans  &trans    &mkp LCLK  &mkp RCLK       &trans
+            >;
+        };
+
+        mouse-fast {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans          &trans           &trans  &trans
+                        &trans  &trans  &trans    &mkp LCLK  &mkp RCLK       &trans
+            >;
+        };
+
+        mouse-slow {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans          &trans           &trans  &trans
+                        &trans  &trans  &trans    &mkp LCLK  &mkp RCLK       &trans
+            >;
+        };
+
+        mouse-xslow {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
