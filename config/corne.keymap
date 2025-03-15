@@ -588,33 +588,6 @@
             >;
         };
 
-        lol {
-            bindings = <
-&kp TAB    &kp Q  &kp W  &kp E   &kp R         &kp T        &kp Y    &kp U   &kp I      &kp O   &kp P     &trans
-&kp TILDE  &kp A  &kp S  &kp D   &kp F         &kp G        &kp H    &kp J   &kp K      &kp L   &kp SEMI  &trans
-&mo 8      &kp Z  &kp X  &kp C   &kp V         &kp B        &kp N    &kp M   &kp COMMA  &trans  &trans    &trans
-                         &trans  &lt 0 ESCAPE  &kp SPACE    &kp RET  &trans  &trans
-            >;
-        };
-
-        lol-2nd-layer {
-            bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Y   &kp B   &kp P   &trans  &kp N6    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        lol-3rd-layer {
-            bindings = <
-&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F1      &kp F2      &kp F3      &kp F4      &kp F5        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(Q)   &kp LC(W)   &kp LC(E)   &kp LC(R)   &kp LC(N5)    &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans      &trans      &trans        &trans  &trans  &trans
-            >;
-        };
-
         mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
