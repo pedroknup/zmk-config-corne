@@ -13,10 +13,10 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80    // default: 10
 #include <dt-bindings/zmk/pointing.h>
 
-#define MOUSE 14
-#define MOUSEFAST 15
-#define MOUSESLOW 16
-#define MOUSEXSLOW 17
+#define MOUSE 11
+#define MOUSEFAST 12
+#define MOUSESLOW 13
+#define MOUSEXSLOW 14
 
 &mmv_input_listener {
     set_mouse_fast {
@@ -34,7 +34,7 @@
 
 &mmv_input_listener {
     set_mouse_extra_slow {
-        layers = <mouse>;
+        layers = <MOUSE>;
         input-processors = <&zip_xy_scaler 1 4>;
     };
 };
