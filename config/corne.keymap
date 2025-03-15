@@ -16,9 +16,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 11
-#define MOUSEFAST 12
-#define MOUSESLOW 13
-#define MOUSEXSLOW 14
+#define MOUSE_FAST 12
+#define MOUSE_ULTRA_FAST 13
 
 &mmv_input_listener {
     set_mouse_normal {
@@ -29,22 +28,15 @@
 
 &mmv_input_listener {
     set_mouse_fast {
-        layers = <MOUSEFAST>;
-        input-processors = <&zip_xy_scaler 2 2>;
+        layers = <MOUSE_FAST>;
+        input-processors = <&zip_xy_scaler 3 1>;
     };
 };
 
 &mmv_input_listener {
-    set_mouse_slow {
-        layers = <MOUSESLOW>;
-        input-processors = <&zip_xy_scaler 1 1>;
-    };
-};
-
-&mmv_input_listener {
-    set_mouse_extra_slow {
-        layers = <MOUSEXSLOW>;
-        input-processors = <&zip_xy_scaler 1 2>;
+    set_mouse_ultra_fast {
+        layers = <MOUSE_ULTRA_FAST>;
+        input-processors = <&zip_xy_scaler 4 1>;
     };
 };
 
