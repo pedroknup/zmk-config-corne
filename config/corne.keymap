@@ -598,30 +598,33 @@
         };
 
         mouse-fast {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans          &trans           &trans  &trans
-                        &trans  &trans  &trans    &mkp LCLK  &mkp RCLK       &trans
-            >;
+                      bindings = <
+                        &trans  &trans  &trans          &mmv MOVE_UP    &trans           &mo 12    &trans     &mo 12          &msc SCRL_UP    &mo 13           &trans  &trans
+                        &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 13    &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
+                        &trans  &trans  &trans          &trans          &trans           &mo 14    &trans     &trans          &trans          &trans           &trans  &trans
+                                                        &trans          &trans           &trans    &mkp LCLK  &mkp RCLK       &trans
+                                                                    >;
+
         };
 
         mouse-slow {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans          &trans           &trans  &trans
-                        &trans  &trans  &trans    &mkp LCLK  &mkp RCLK       &trans
-            >;
+                      bindings = <
+                        &trans  &trans  &trans          &mmv MOVE_UP    &trans           &mo 12    &trans     &mo 12          &msc SCRL_UP    &mo 13           &trans  &trans
+                        &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 13    &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
+                        &trans  &trans  &trans          &trans          &trans           &mo 14    &trans     &trans          &trans          &trans           &trans  &trans
+                                                        &trans          &trans           &trans    &mkp LCLK  &mkp RCLK       &trans
+                                                                    >;
+
         };
 
         mouse-xslow {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans          &trans           &trans  &trans
-                        &trans  &trans  &trans    &mkp LCLK  &mkp RCLK       &trans
-            >;
+                      bindings = <
+                        &trans  &trans  &trans          &mmv MOVE_UP    &trans           &mo 12    &trans     &mo 12          &msc SCRL_UP    &mo 13           &trans  &trans
+                        &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 13    &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
+                        &trans  &trans  &trans          &trans          &trans           &mo 14    &trans     &trans          &trans          &trans           &trans  &trans
+                                                        &trans          &trans           &trans    &mkp LCLK  &mkp RCLK       &trans
+                                                                    >;
+
         };
     };
 };
